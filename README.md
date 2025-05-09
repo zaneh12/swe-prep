@@ -17,10 +17,9 @@ Each folder corresponds to a common topic or pattern.
 Inside: Python solutions with inline explanations and file names reflecting the problem.
 
 Example:
-arrays/
-├── two_sum.py
-├── best_time_to_buy_sell_stock.py
-
+/arrays
+│── /two_sum.py        # Easy Hashmap
+│── /top_k_elements.py        # Bucket Sort
 ## Notes
 
 - Python 3.10+
