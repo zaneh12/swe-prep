@@ -18,8 +18,9 @@ Inside: Python solutions with inline explanations and file names reflecting the 
 
 Example:
 /arrays
-│── /two_sum.py        # Easy Hashmap
-│── /top_k_elements.py        # Bucket Sort
+├── two_sum.py         # Easy Hashmap
+├── top_k_elements.py  # Bucket Sort
+
 ## Notes
 
 - Python 3.10+
