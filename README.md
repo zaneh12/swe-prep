@@ -17,9 +17,11 @@ Each folder corresponds to a common topic or pattern.
 Inside: Python solutions with inline explanations and file names reflecting the problem.
 
 Example:
+```text
 /arrays
-├── two_sum.py         # Easy Hashmap
-├── top_k_elements.py  # Bucket Sort
+├── two_sum.py          # Easy - Hashmap
+├── top_k_elements.py   # Medium - Bucket Sort
+```
 
 ## Notes
 
