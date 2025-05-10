@@ -1,26 +1,27 @@
-# SWE Prep
+# Coding Interview Prep
 
-Structured practice for software engineering interviews using Python.  
-Organized by pattern/topic, based primarily on the [Neetcode 150](https://neetcode.io/).  
-Solutions are written with clarity and maintainability in mind — not just to pass.
+Structured Python practice for data structures and algorithms (DSA) interviews.  
+The problems are organized by pattern/topic, loosely following the [Neetcode 150](https://neetcode.io/) track.
+
+This repo is meant for anyone preparing for roles that require strong problem-solving skills — including software engineering, quant resarch, and data-focused positions.
 
 ## Focus Areas
 
-- Core data structures and algorithms
-- Problem-solving patterns (e.g. sliding window, two pointers, recursion)
-- Clean, readable Python code
-- Type annotations, edge case handling, and simplicity
+- Core algorithms and data structures
+- Pattern recognition (e.g. sliding window, two pointers, backtracking)
+- Clean, readable Python with type annotations
+- Practical interview readiness over over-engineered solutions
 
 ## Directory Structure
 
-Each folder corresponds to a common topic or pattern.  
-Inside: Python solutions with inline explanations and file names reflecting the problem.
+Each folder represents a topic or problem-solving pattern.  
+File names reflect the problem and approach used.
 
 Example:
 ```text
-/arrays
-├── two_sum.py          # Easy - Hashmap
-├── top_k_elements.py   # Medium - Bucket Sort
+/two_pointers
+├── two_sum_ii.py                # Easy – Two Pointers
+├── container_with_most_water.py # Medium – Greedy
 ```
 
 ## Notes
@@ -31,4 +32,4 @@ Example:
 
 ## Contact
 
-If you're prepping and want to trade notes or keep each other accountable, feel free to message me via [my website](https://zanehassoun.com).
+If you're prepping and want to trade notes or chat, feel free to message me via [my website](https://zaneh12.github.io).
