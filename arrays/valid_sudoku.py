@@ -11,6 +11,7 @@ class Solution:
         """
         Returns True if the board is valid. Empty cells are marked as '.'.
         Time: O(1) since the board size is fixed at 9x9.
+        reviewed at 5/14 to know the // // trick. and also its a set not list so we can do O(1) lookups.
         """
         rows = defaultdict(set)
         cols = defaultdict(set)
