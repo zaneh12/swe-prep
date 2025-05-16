@@ -15,6 +15,8 @@ Example:
 Input: tokens = ["2","1","+","3","*"]
 Output: 9
 Explanation: (2 + 1) * 3 = 9
+
+redid this one 5/16/25. pretty easy but i found a better way updated below
 """
 
 from typing import List
@@ -23,19 +25,33 @@ class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         stack = []
 
+        ops = {
+        '+': lambda a, b: a + b,
+        '-': lambda a, b: b-a,
+        '/': lambda a, b: int(b/a),
+        '*': lambda a, b: a * b
+        }
+
         for token in tokens:
-            if token == '+':
-                stack.append(stack.pop() + stack.pop())
-            elif token == '-':
-                right, left = stack.pop(), stack.pop()
-                stack.append(left - right)
-            elif token == '*':
-                stack.append(stack.pop() * stack.pop())
-            elif token == '/':
-                right, left = stack.pop(), stack.pop()
-                stack.append(int(left / right))  # Truncate toward zero
+            if token in ops:
+                stack.append(ops[token](stack.pop(), stack.pop()))
             else:
                 stack.append(int(token))
+        return stack[0]
+
+        # for token in tokens:
+        #     if token == '+':
+        #         stack.append(stack.pop() + stack.pop())
+        #     elif token == '-':
+        #         right, left = stack.pop(), stack.pop()
+        #         stack.append(left - right)
+        #     elif token == '*':
+        #         stack.append(stack.pop() * stack.pop())
+        #     elif token == '/':
+        #         right, left = stack.pop(), stack.pop()
+        #         stack.append(int(left / right))  # Truncate toward zero
+        #     else:
+        #         stack.append(int(token))
 
         return stack[0]
 
