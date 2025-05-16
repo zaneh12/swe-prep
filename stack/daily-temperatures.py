@@ -13,6 +13,9 @@ Output: [1,1,4,2,1,1,0,0]
 Constraints:
 - 1 <= temperatures.length <= 10^5
 - 30 <= temperatures[i] <= 100
+
+redid this one on 5/16/25. was good except i put the > sign backwards
+need to focus on focus. think more critically. every char matters
 """
 
 from typing import List
