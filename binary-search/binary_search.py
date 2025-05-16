@@ -6,6 +6,8 @@ class Solution:
         Standard binary search implementation.
         Returns the index of target in nums if found, else -1.
         Assumes nums is sorted in ascending order.
+
+        # redid this 05/16/25. need to remember 1. is len(nums) a valid index? 2. if mid!= target than l!= mid it mid+1
         """
         l, r = 0, len(nums) - 1
         while l <= r:
@@ -27,5 +29,3 @@ if __name__ == "__main__":
     print(sol.search([1, 3, 5, 7, 9], 9))     # Output: 4
     print(sol.search([1, 3, 5, 7, 9], 2))     # Output: -1
     print(sol.search([], 3))                 # Output: -1
-    print(sol.search([5], 5))                # Output: 0
-    print(sol.search([5], -5))               # Output: -1
