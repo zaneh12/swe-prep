@@ -24,7 +24,7 @@ class Solution:
             return None
         # Recursively invert left and right subtrees
         left = self.invertTree(root.left)
-        right = self.invertTree(root.right)
+        right = self.invertTree(root.right) 
 
         # Swap them
         root.left, root.right = right, left
