@@ -19,6 +19,8 @@ class Solution:
 
         Returns:
             Optional[TreeNode]: Root of the inverted binary tree.
+
+        reviewed on 5/17/2025 just have to remember the recursion to get to the bottom
         """
         if not root:
             return None
