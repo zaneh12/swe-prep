@@ -20,6 +20,8 @@ def rearrange(head):
 
     Returns:
     None
+
+    Reviewed on 5/20/2025 full grasp
     """
     if not head or not head.next:
         return
