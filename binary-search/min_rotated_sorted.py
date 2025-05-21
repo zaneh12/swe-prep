@@ -7,6 +7,8 @@ class Solution:
         """
         Finds the minimum element in a rotated sorted array with no duplicates.
         Binary search with a shrinking [l, r] window.
+
+        reviewed 5/21/2025
         """
         l, r = 0, len(nums) - 1
 
