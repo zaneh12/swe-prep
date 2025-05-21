@@ -7,6 +7,8 @@ class Solution:
         """
         Performs binary search in a rotated sorted array with no duplicates.
         Returns the index of target if found, else -1.
+
+        Reviewed 5/21/2025
         """
         l, r = 0, len(nums) - 1
 
